@@ -122,7 +122,12 @@
 >>>>>>> f2868c89f6684cc8753df1bf7ee80e093eaf25de
 		<script>
 
-				new WOW().init();
+				const wow = new WOW({
+					  boxClass: 'wow',
+					  animateClass: 'animated',
+					  offset: 0,
+					  live: true
+					});
 				
 
 				document.getElementById('contact').onclick = function() {
